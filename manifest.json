@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Custom Background - CRIS Ordem Paranormal",
+    "version": "1.0",
+    "description": "Permite definir uma imagem de fundo personalizada no site CRIS Ordem Paranormal.",
+    "permissions": ["storage"],
+    "host_permissions": [
+        "https://crisordemparanormal.com/*"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["https://crisordemparanormal.com/*"],
+        "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
