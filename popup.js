@@ -54,7 +54,7 @@ function deletePreset() {
     if (!activePreset) return;
 
     const keys = Object.keys(presets);
-    if (keys.length <= 1) return; // nunca deixa sem preset
+    if (keys.length <= 1) return;
 
     delete presets[activePreset];
     activePreset = Object.keys(presets)[0];
